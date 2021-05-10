@@ -1,3 +1,4 @@
+import HeaderTop from './components/HeaderTop';
 import {
   Box,
   ThemeProvider,
@@ -9,6 +10,7 @@ function App() {
     <ThemeProvider colorMode="night">
       <BaseStyles>
         <Box bg="bg.primary" height="100vh">
+          <HeaderTop />
           <UnderlineNav aria-label="Main">
             <UnderlineNav.Link href="#home" selected>
               Home
