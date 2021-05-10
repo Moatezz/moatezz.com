@@ -1,10 +1,23 @@
-import { Box, ThemeProvider, BaseStyles, Button } from '@primer/components';
+import {
+  Box,
+  ThemeProvider,
+  BaseStyles,
+  UnderlineNav,
+} from '@primer/components';
 function App() {
   return (
     <ThemeProvider colorMode="night">
       <BaseStyles>
         <Box bg="bg.primary" height="100vh">
-          <Button>Hello</Button>
+          <UnderlineNav aria-label="Main">
+            <UnderlineNav.Link href="#home" selected>
+              Home
+            </UnderlineNav.Link>
+            <UnderlineNav.Link href="#documentation">
+              Documentation
+            </UnderlineNav.Link>
+            <UnderlineNav.Link href="#support">Support</UnderlineNav.Link>
+          </UnderlineNav>
         </Box>
       </BaseStyles>
     </ThemeProvider>
