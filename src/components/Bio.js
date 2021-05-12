@@ -4,6 +4,7 @@ import { LocationIcon, MailIcon, ClippyIcon } from '@primer/octicons-react';
 import WrapAvatar from './styles/WrapAvatar';
 import Wrapper from './styles/Wrapper';
 import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord } from 'react-icons/fa';
+import WrapPadding from './styles/WrapPadding';
 function Bio() {
   return (
     <Wrapper>
@@ -18,10 +19,12 @@ function Bio() {
         <Text as="h2">Moatezz Chabane</Text>
         <Text as="p">Full Stack Web Developer</Text>
         <BorderBox>
-          <FaLinkedin />
-          <FaGithub />
-          <FaWhatsapp />
-          <FaDiscord />
+          <WrapPadding>
+            <FaLinkedin />
+            <FaGithub />
+            <FaWhatsapp />
+            <FaDiscord />
+          </WrapPadding>
         </BorderBox>
         <Box>
           <LocationIcon size={16} />
