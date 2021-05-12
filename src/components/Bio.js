@@ -35,7 +35,7 @@ function Bio() {
           <MailIcon size={16} />
           <Text as="p">moatezzchabane@gmail.com</Text>
           <BorderBox>
-            <ClippyIcon size={16} />
+            <ClippyIcon aria-label="Copy Email address" size={16} />
           </BorderBox>
         </Box>
       </BorderBox>
