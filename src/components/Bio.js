@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Avatar, BorderBox } from '@primer/components';
+import { Box, Avatar, BorderBox, Text } from '@primer/components';
+import { LocationIcon, MailIcon, ClippyIcon } from '@primer/octicons-react';
 import WrapAvatar from './styles/WrapAvatar';
 import Wrapper from './styles/Wrapper';
 function Bio() {
@@ -13,6 +14,19 @@ function Bio() {
             size="250"
           />
         </WrapAvatar>
+        <Text as="h2">Moatezz Chabane</Text>
+        <Text as="p">Full Stack Web Developer</Text>
+        <Box>
+          <LocationIcon size={16} />
+          <Text as="p">Algiers, Algeria</Text>
+        </Box>
+        <Box>
+          <MailIcon size={16} />
+          <Text as="p">moatezzchabane@gmail.com</Text>
+          <BorderBox>
+            <ClippyIcon size={16} />
+          </BorderBox>
+        </Box>
       </BorderBox>
     </Wrapper>
   );
