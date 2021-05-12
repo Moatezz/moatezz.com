@@ -3,6 +3,7 @@ import { Box, Avatar, BorderBox, Text } from '@primer/components';
 import { LocationIcon, MailIcon, ClippyIcon } from '@primer/octicons-react';
 import WrapAvatar from './styles/WrapAvatar';
 import Wrapper from './styles/Wrapper';
+import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord } from 'react-icons/fa';
 function Bio() {
   return (
     <Wrapper>
@@ -16,6 +17,12 @@ function Bio() {
         </WrapAvatar>
         <Text as="h2">Moatezz Chabane</Text>
         <Text as="p">Full Stack Web Developer</Text>
+        <BorderBox>
+          <FaLinkedin />
+          <FaGithub />
+          <FaWhatsapp />
+          <FaDiscord />
+        </BorderBox>
         <Box>
           <LocationIcon size={16} />
           <Text as="p">Algiers, Algeria</Text>
