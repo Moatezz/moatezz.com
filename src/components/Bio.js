@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Avatar, BorderBox, Text } from '@primer/components';
+import { Box, Avatar, BorderBox, Text, Link } from '@primer/components';
 import { LocationIcon, MailIcon, ClippyIcon } from '@primer/octicons-react';
 import WrapAvatar from './styles/WrapAvatar';
 import Wrapper from './styles/Wrapper';
@@ -18,6 +18,7 @@ function Bio() {
         </WrapAvatar>
         <Text as="h2">Moatezz Chabane</Text>
         <Text as="p">Full Stack Web Developer</Text>
+        <Link href="https://www.moatezz.com">www.moatezz.com</Link>
         <BorderBox>
           <WrapPadding>
             <FaLinkedin />
