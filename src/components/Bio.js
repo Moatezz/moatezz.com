@@ -7,12 +7,12 @@ import {
   Link,
   Flex,
   StyledOcticon,
+  Button,
 } from '@primer/components';
 import { LocationIcon, MailIcon, ClippyIcon } from '@primer/octicons-react';
-import WrapAvatar from './styles/WrapAvatar';
 import Wrapper from './styles/Wrapper';
 import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord } from 'react-icons/fa';
-import WrapPadding from './styles/WrapPadding';
+
 function Bio() {
   return (
     <Wrapper>
@@ -35,14 +35,27 @@ function Bio() {
               Full Stack Web Developer
             </Text>
           </Box>
-          <Link href="https://www.moatezz.com">www.moatezz.com</Link>
+          <Link muted href="https://www.moatezz.com">
+            www.moatezz.com
+          </Link>
+          <Button px={7} mt={3}>
+            <Text fontWeight={100}>Contact me</Text>
+          </Button>
         </Flex>
-        <BorderBox py={2} mt={3}>
+        <BorderBox py={2} mt={4} borderStyle="none" borderX="1px solid black">
           <Flex flexDirection="row" justifyContent="space-around">
-            <FaLinkedin size={32} />
-            <FaGithub size={32} />
-            <FaWhatsapp size={32} />
-            <FaDiscord size={32} />
+            <Link href="#">
+              <FaLinkedin color="#6a737d" size={32} />
+            </Link>
+            <Link href="#">
+              <FaGithub color="#6a737d" size={32} />
+            </Link>
+            <Link href="#">
+              <FaWhatsapp color="#6a737d" size={32} />
+            </Link>
+            <Link href="#">
+              <FaDiscord color="#6a737d" size={32} />
+            </Link>
           </Flex>
         </BorderBox>
         <Flex mt={3} flexDirection="row" alignItems="center">
