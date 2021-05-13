@@ -1,5 +1,6 @@
 import HeaderTop from './components/HeaderTop';
 import Bio from './components/Bio';
+import Main from './components/Main';
 import { Box, ThemeProvider, BaseStyles } from '@primer/components';
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <Box bg="bg.primary" height="100vh">
           <HeaderTop />
           <Bio />
+          <Main />
         </Box>
       </BaseStyles>
     </ThemeProvider>
