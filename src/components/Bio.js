@@ -8,17 +8,25 @@ import WrapPadding from './styles/WrapPadding';
 function Bio() {
   return (
     <Wrapper>
-      <BorderBox>
+      <BorderBox ml={3} mt={3} p={3}>
         <WrapAvatar>
-          <Avatar
-            className="avatar"
-            src="https://avatars.githubusercontent.com/u/72275419?v=4"
-            size="250"
-          />
+          <BorderBox borderRadius={100}>
+            <Avatar
+              className="avatar"
+              src="https://avatars.githubusercontent.com/u/72275419?v=4"
+              size="200"
+            />
+          </BorderBox>
         </WrapAvatar>
-        <Text as="h2">Moatezz Chabane</Text>
-        <Text as="p">Full Stack Web Developer</Text>
-        <Link href="https://www.moatezz.com">www.moatezz.com</Link>
+        <Text lineHeight={0.6} as="h2">
+          Moatezz Chabane
+        </Text>
+        <Text my={2} lineHeight={0.2} as="p">
+          Full Stack Web Developer
+        </Text>
+        <Link lineHeight={0.1} href="https://www.moatezz.com">
+          www.moatezz.com
+        </Link>
         <BorderBox>
           <WrapPadding>
             <FaLinkedin />
