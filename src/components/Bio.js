@@ -10,12 +10,11 @@ import {
   Button,
 } from '@primer/components';
 import { LocationIcon, MailIcon, ClippyIcon } from '@primer/octicons-react';
-import Wrapper from './styles/Wrapper';
 import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord } from 'react-icons/fa';
 
 function Bio() {
   return (
-    <Wrapper>
+    <Box width={300} mr={50}>
       <BorderBox ml={3} mt={3} p={3}>
         <Flex flexDirection="column" alignItems="center">
           <BorderBox borderRadius={100}>
@@ -72,7 +71,7 @@ function Bio() {
           <StyledOcticon icon={ClippyIcon} size={16} />
         </Flex>
       </BorderBox>
-    </Wrapper>
+    </Box>
   );
 }
 
