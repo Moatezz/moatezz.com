@@ -1,6 +1,6 @@
 import HeaderTop from './components/HeaderTop';
 import Bio from './components/Bio';
-import Main from './components/Main';
+import Main from './components/Main/Main';
 import { Box, ThemeProvider, BaseStyles } from '@primer/components';
 function App() {
   return (
