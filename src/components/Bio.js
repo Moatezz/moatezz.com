@@ -14,7 +14,7 @@ import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord } from 'react-icons/fa';
 
 function Bio() {
   return (
-    <Box width={300} mr={50}>
+    <Box width={320} mr={50}>
       <BorderBox ml={3} mt={3} p={3}>
         <Flex flexDirection="column" alignItems="center">
           <BorderBox borderRadius={100}>
@@ -68,7 +68,7 @@ function Bio() {
           <Text my={0} as="p" pr={2}>
             moatezzchabane@gmail.com
           </Text>
-          <StyledOcticon icon={ClippyIcon} size={16} />
+          <StyledOcticon aria-label="Copy" icon={ClippyIcon} size={20} />
         </Flex>
       </BorderBox>
     </Box>
