@@ -6,7 +6,9 @@ function Instance() {
     <BorderBox m={3} p={3} fontSize={1}>
       <Link fontWeight={600}>Something</Link>
       <Text fontSize={1} as="p">
-        This is a description for a certain project
+        This is a description for a certain projectThis is a description for a
+        certain projectThis is a description for a certain projectThis is a
+        descrip
       </Text>
       <Text fontSize={1} as="p">
         React
