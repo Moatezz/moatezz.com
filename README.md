@@ -1,3 +1,3 @@
-## Imoportant!
+## Important!
 
-CONATACT ME BEFORE USING IT
+CONTACT ME BEFORE USING IT: moatezzchabane@gmail.com
