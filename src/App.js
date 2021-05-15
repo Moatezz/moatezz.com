@@ -11,7 +11,7 @@ function App() {
           <HeaderTop />
           <Grid gridTemplateColumns="1fr 4fr">
             <Bio />
-            <Box ml={100}>
+            <Box mx={100}>
               <Nav />
               <Main />
             </Box>
