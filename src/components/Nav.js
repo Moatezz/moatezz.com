@@ -56,7 +56,7 @@ function Nav() {
 
   return (
     <Box>
-      <UnderlineNav aria-label="Main" pl={400}>
+      <UnderlineNav aria-label="Main" pl={0}>
         <UnderlineNav.Link
           href="#home"
           selected={active.projects}

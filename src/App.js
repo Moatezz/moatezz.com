@@ -9,9 +9,9 @@ function App() {
       <BaseStyles>
         <Box bg="bg.primary" minHeight="100vh">
           <HeaderTop />
-          <Grid gridTemplateColumns="repeat(2,auto)">
+          <Grid gridTemplateColumns="1fr 4fr">
             <Bio />
-            <Box>
+            <Box ml={100}>
               <Nav />
               <Main />
             </Box>

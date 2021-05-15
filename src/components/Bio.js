@@ -14,7 +14,7 @@ import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord } from 'react-icons/fa';
 
 function Bio() {
   return (
-    <Box width={320} mr={50}>
+    <Box mr={0}>
       <BorderBox ml={3} mt={3} p={3}>
         <Flex flexDirection="column" alignItems="center">
           <BorderBox borderRadius={100}>
