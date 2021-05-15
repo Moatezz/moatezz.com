@@ -3,10 +3,14 @@ import React from 'react';
 
 function Instance() {
   return (
-    <BorderBox>
-      <Link>Something</Link>
-      <Text as="p">This is a description for a certain project</Text>
-      <Text as="p">React</Text>
+    <BorderBox m={3} p={2} fontSize={1}>
+      <Link fontWeight={600}>Something</Link>
+      <Text fontSize={1} as="p">
+        This is a description for a certain project
+      </Text>
+      <Text fontSize={1} as="p">
+        React
+      </Text>
     </BorderBox>
   );
 }
