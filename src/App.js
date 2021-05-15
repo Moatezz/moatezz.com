@@ -7,7 +7,7 @@ function App() {
   return (
     <ThemeProvider colorMode="night">
       <BaseStyles>
-        <Box bg="bg.primary" height="max-content">
+        <Box bg="bg.primary" minHeight="100vh">
           <HeaderTop />
           <Nav />
           <Bio />
