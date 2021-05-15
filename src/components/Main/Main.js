@@ -1,7 +1,13 @@
+import { Box } from '@primer/components';
 import React from 'react';
+import Project from './Project/Project';
 
 function Main() {
-  return <div></div>;
+  return (
+    <Box>
+      <Project />
+    </Box>
+  );
 }
 
 export default Main;
