@@ -12,11 +12,10 @@ function App() {
 
           <Nav />
 
-          <Grid gridTemplateColumns="1fr 4fr">
+          <Grid gridTemplateColumns="1fr 4fr" mx={150}>
             <Bio />
-            <Box mx={100}>
-              <Main />
-            </Box>
+
+            <Main />
           </Grid>
         </Box>
       </BaseStyles>

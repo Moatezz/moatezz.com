@@ -62,7 +62,7 @@ function Nav() {
   };
 
   return (
-    <Box pt="10vh">
+    <Box pt="5vh">
       <UnderlineNav aria-label="Main" pl="30vw">
         <UnderlineNav.Link
           href="#home"
