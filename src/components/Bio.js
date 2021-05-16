@@ -37,8 +37,8 @@ function Bio() {
           <Link muted href="https://www.moatezz.com">
             www.moatezz.com
           </Link>
-          <Button px={7} mt={3}>
-            <Text fontWeight={100}>Contact me</Text>
+          <Button px={10} mt={3}>
+            Contact me
           </Button>
         </Flex>
         <BorderBox py={2} mt={4} borderStyle="none" borderX="1px solid black">
