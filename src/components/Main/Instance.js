@@ -8,7 +8,7 @@ function Instance() {
       <Text fontSize={1} as="p">
         This is a description for a certain projectThis is a description for a
         certain projectThis is a description for a certain projectThis is a
-        descrip
+        description
       </Text>
       <Text fontSize={1} as="p">
         React
