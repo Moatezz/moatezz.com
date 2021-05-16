@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { UnderlineNav, Box, StyledOcticon, Flex } from '@primer/components';
+import { UnderlineNav, Box, StyledOcticon } from '@primer/components';
 import {
   NoteIcon,
   PackageIcon,
   PlugIcon,
   ProjectIcon,
 } from '@primer/octicons-react';
-import { BORDER } from '@primer/components/lib/constants';
 
 function Nav() {
   const [active, setActive] = useState({
