@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { UnderlineNav, Box } from '@primer/components';
+import { UnderlineNav, Box, StyledOcticon, Flex } from '@primer/components';
+import {
+  NoteIcon,
+  PackageIcon,
+  PlugIcon,
+  ProjectIcon,
+} from '@primer/octicons-react';
 
 function Nav() {
   const [active, setActive] = useState({
@@ -64,6 +70,7 @@ function Nav() {
             handleSelection('Projects');
           }}
         >
+          <StyledOcticon icon={ProjectIcon} mr={2} />
           Projects
         </UnderlineNav.Link>
         <UnderlineNav.Link
@@ -73,8 +80,10 @@ function Nav() {
             handleSelection('Packages');
           }}
         >
+          <StyledOcticon icon={PackageIcon} mr={2} />
           Packages
         </UnderlineNav.Link>
+
         <UnderlineNav.Link
           href="#support"
           selected={active.wpPlugins}
@@ -82,8 +91,10 @@ function Nav() {
             handleSelection('WP Plugins');
           }}
         >
+          <StyledOcticon icon={PlugIcon} mr={2} />
           WP Plugins
         </UnderlineNav.Link>
+
         <UnderlineNav.Link
           href="#support"
           selected={active.resume}
@@ -91,6 +102,7 @@ function Nav() {
             handleSelection('Resume');
           }}
         >
+          <StyledOcticon icon={NoteIcon} mr={2} />
           Resume
         </UnderlineNav.Link>
       </UnderlineNav>
