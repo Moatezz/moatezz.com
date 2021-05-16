@@ -9,10 +9,12 @@ function App() {
       <BaseStyles>
         <Box bg="bg.primary" minHeight="100vh">
           <HeaderTop />
+
+          <Nav />
+
           <Grid gridTemplateColumns="1fr 4fr">
             <Bio />
             <Box mx={100}>
-              <Nav />
               <Main />
             </Box>
           </Grid>

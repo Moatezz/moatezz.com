@@ -6,6 +6,7 @@ import {
   PlugIcon,
   ProjectIcon,
 } from '@primer/octicons-react';
+import { BORDER } from '@primer/components/lib/constants';
 
 function Nav() {
   const [active, setActive] = useState({
@@ -62,7 +63,7 @@ function Nav() {
 
   return (
     <Box>
-      <UnderlineNav aria-label="Main" pl={0}>
+      <UnderlineNav aria-label="Main" pl="30vw">
         <UnderlineNav.Link
           href="#home"
           selected={active.projects}
@@ -111,3 +112,4 @@ function Nav() {
 }
 
 export default Nav;
+//gridTemplateColumns="1fr 1fr"
