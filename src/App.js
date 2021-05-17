@@ -21,7 +21,7 @@ function App() {
       window.removeEventListener('resize', resizeListener);
     };
   }, [width]);
-  //console.log(width);
+  console.log(width);
   return (
     <ThemeProvider colorMode="night">
       <BaseStyles>
