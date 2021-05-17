@@ -20,17 +20,12 @@ function App() {
     return () => {
       window.removeEventListener('resize', resizeListener);
     };
-  }, [width]);
+  }, []);
   console.log(width);
   return (
     <ThemeProvider colorMode="night">
       <BaseStyles>
-        <Box
-          bg="bg.primary"
-          minHeight="100vh"
-          minWidth="100vw"
-          onResize={console.log(window.outerWidth)}
-        >
+        <Box bg="bg.primary" minHeight="100vh" minWidth="100vw">
           <HeaderTop />
 
           <Nav />
