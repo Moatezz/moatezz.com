@@ -1,7 +1,7 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useContext } from 'react';
 
 export const DeviceContext = createContext();
-
+export const useDeviceContext = () => useContext(DeviceContext);
 function Context({ children }) {
   const [deviceState, setDeviceState] = useState('desktop');
   const getWidth = () =>
@@ -21,7 +21,7 @@ function Context({ children }) {
       window.removeEventListener('resize', resizeListener);
     };
   }, []);
-  console.log(deviceState);
+  //console.log(deviceState);
 
   return (
     <DeviceContext.Provider value={deviceState}>
