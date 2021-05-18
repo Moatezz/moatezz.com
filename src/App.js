@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import { Box, ThemeProvider, BaseStyles, Grid } from '@primer/components';
 import { useDeviceContext } from './Context';
 function App() {
+<<<<<<< HEAD
   const device = useDeviceContext();
   let gtd = '1fr 4fr';
   let mx = 150;
@@ -13,6 +14,7 @@ function App() {
   }
 
   console.log(device);
+
   return (
     <ThemeProvider colorMode="night">
       <BaseStyles>
