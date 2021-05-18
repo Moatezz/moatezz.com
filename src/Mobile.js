@@ -14,7 +14,6 @@ import {
   Flex,
   Button,
 } from '@primer/components';
-import { useDeviceContext } from './Context';
 import {
   NoteIcon,
   PackageIcon,
