@@ -8,9 +8,10 @@ function Instance() {
   const something = projects.something;
   const iconsLink = (instance) => {
     const targetedSkill = projects[instance].skills;
-    return skillsIcons[targetedSkill];
+    return String(skillsIcons[targetedSkill]);
   };
-  console.log(iconsLink('something'));
+  const target = somethinging;
+  console.log(target);
   return (
     <BorderBox m={3} p={3} fontSize={1}>
       <Link fontWeight={600}>Something</Link>
@@ -18,7 +19,7 @@ function Instance() {
         {something.description}
       </Text>
       <Flex flexDirection="row" alignItems="center">
-        <img src={somethinging} height="25px" alt="skill icon" />
+        <img src={`${target}`} height="25px" alt="skill icon" />
         <Text fontSize={1} as="p">
           React
         </Text>
