@@ -1,6 +1,6 @@
 import { Box, Grid } from '@primer/components';
 import React from 'react';
-import Instance from './Main/Instance';
+import Instance from './Instance';
 
 function Main() {
   return (
