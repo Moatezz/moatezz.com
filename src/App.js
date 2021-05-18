@@ -5,23 +5,6 @@ import Nav from './components/Nav';
 import { Box, ThemeProvider, BaseStyles, Grid } from '@primer/components';
 import { useEffect, useState } from 'react';
 function App() {
-  const getWidth = () =>
-    window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth;
-  let [width, setWidth] = useState(getWidth());
-  // hello
-  useEffect(() => {
-    const resizeListener = () => {
-      setWidth(getWidth());
-    };
-    window.addEventListener('resize', resizeListener);
-
-    return () => {
-      window.removeEventListener('resize', resizeListener);
-    };
-  }, []);
-  console.log(width);
   return (
     <ThemeProvider colorMode="night">
       <BaseStyles>
