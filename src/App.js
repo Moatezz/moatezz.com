@@ -3,8 +3,10 @@ import Bio from './components/Bio';
 import Main from './components/Main';
 import Nav from './components/Nav';
 import { Box, ThemeProvider, BaseStyles, Grid } from '@primer/components';
-import { useEffect, useState } from 'react';
+import { useDeviceContext } from './Context';
 function App() {
+  const cntx = useDeviceContext();
+  console.log(cntx);
   return (
     <ThemeProvider colorMode="night">
       <BaseStyles>
