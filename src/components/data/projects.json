@@ -1,6 +1,6 @@
 {
     "something": {
         "description": "hello boys and gila's it is the new norm of controlling the southwest",
-        "skills": ["React"]
+        "skills": "React"
     }
 }
