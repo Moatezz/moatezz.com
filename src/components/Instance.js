@@ -18,7 +18,7 @@ function Instance() {
         {something.description}
       </Text>
       <Flex flexDirection="row" alignItems="center">
-        <img src={somethinging} height="25px" />
+        <img src={somethinging} height="25px" alt="skill icon" />
         <Text fontSize={1} as="p">
           React
         </Text>
