@@ -10,7 +10,7 @@ function App() {
     document.documentElement.clientWidth ||
     document.body.clientWidth;
   let [width, setWidth] = useState(getWidth());
-
+  // hello
   useEffect(() => {
     const resizeListener = () => {
       setWidth(getWidth());
