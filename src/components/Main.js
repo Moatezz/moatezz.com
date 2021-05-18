@@ -1,7 +1,7 @@
-import { Box, Flex, Grid } from '@primer/components';
+import { Box, Flex } from '@primer/components';
 import React from 'react';
 import ComingSoon from './ComingSoon';
-import Instance from './Instance';
+//import Instance from './Instance';
 
 function Main() {
   return (
