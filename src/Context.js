@@ -1,6 +1,6 @@
-import React, { creatContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
-export const DeviceContext = creatContext();
+export const DeviceContext = createContext();
 
 function Context({ children }) {
   const [deviceState, setDeviceState] = useState('desktop');
@@ -11,7 +11,7 @@ function Context({ children }) {
 
   useEffect(() => {
     const resizeListener = () => {
-      if (getWidth() < 800) setDeviceState('tablet');
+      if (getWidth() < 800 && getWidth() > 480) setDeviceState('tablet');
       else if (getWidth() < 480) setDeviceState('mobile');
       else setDeviceState('desktop');
     };
@@ -21,7 +21,7 @@ function Context({ children }) {
       window.removeEventListener('resize', resizeListener);
     };
   }, []);
-  console.log(state);
+  console.log(deviceState);
 
   return (
     <DeviceContext.Provider value={deviceState}>
